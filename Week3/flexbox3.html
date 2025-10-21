@@ -8,86 +8,100 @@
     <style>
         .Bossku {
             display: flex;
-            justify-content: space-between;
+            padding: 20px 60px;
         }
 
         .Bossku div {
             display: flex;
             font-family: 'space grotesk', sans-serif;
-            justify-content: space-between;
-            font-size: 25px;
+            font-size: 35px;
+            align-items: center;
+        }
+
+        .Bossku>div:first-child {
+            margin-right: auto;
         }
 
         .Bossku .button {
-            border: #000000 solid 2px;
-            padding: 3px 60px;
-            text-decoration: none;
-            border-radius: 10px;
+            margin-left: 35px;
+            display: flex;
+            align-items: center;
         }
 
-        .Bossku .button:hover {
+        .Bossku .button .request-quote {
+            border: 2px solid #000000;
+            padding: 30px 40px;
+            text-decoration: none;
+            border-radius: 10px;
+            color: #000000;
+            display: inline-block;
+        }
+
+        .Bossku .button .request-quote:hover {
             background-color: #000000;
             color: #ffffff;
         }
 
         .Bossku .middle p {
-            margin: 50px;
-            cursor: pointer;
-
+            margin: 35px;
         }
 
         a.consultation {
-            padding: 15px 20px;
+            padding: 35px 40px;
             background-color: #000000;
             color: #ffffff;
             text-decoration: none;
-            border-radius: 10px;
+            border-radius: 15px;
             font-family: 'space grotesk', sans-serif;
-            margin: 60px;
+            font-size: 35px;
+            align-self: flex-start;
         }
 
         a.consultation:hover {
-            background-color: #555555;
+            background-color: #333;
         }
 
         .content {
             display: flex;
-            justify-content: flex-start;
+            justify-content: space-between;
+            gap: 2rem;
+            padding: 60px;
+        }
+
+        .content .text {
+            display: flex;
             flex-direction: column;
-
+            gap: 10px;
         }
 
-        .content div h1 {
+        .content .text h1 {
             font-family: 'space grotesk', sans-serif;
-            font-weight: 700;
-            font-size: 36px;
+            font-size: 100px;
             color: #000000;
-            margin: 60px
+            letter-spacing: 2.5px;
         }
 
-        .content div p {
+        .content .text p {
             font-family: 'space grotesk', sans-serif;
-            font-weight: 400;
-
+            font-size: 45px;
             color: #000000;
             line-height: 1.5;
-            margin: 60px;
+            word-spacing: 1.5px;
         }
 
-        .content div img {
-            width: auto;
-            height: auto;
+        .content .media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
         }
 
-        img {
-            margin-top: 70px;
-            margin: 30px;
-            width: auto;
-            height: auto;
+        .full-width-logo {
+            display: block;
+            width: 100%;
+            max-width: 100%;
         }
     </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Space+Grotesk:wght@300..700&display=swap"
         rel="stylesheet">
@@ -95,7 +109,7 @@
 
 <body>
     <div class="Bossku">
-        <div>
+        <div class="heading">
             <h1>Positivus</h1>
         </div>
         <div class="middle">
@@ -106,20 +120,22 @@
             <p>Blog</p>
         </div>
         <div class="button">
-            <a class="Request a quote" href="#" target="_blank "></a>Request a quote
+            <a class="request-quote" href="#" target="_blank">Request a quote</a>
         </div>
     </div>
     <div class="content">
-        <div>
-            <h1>Navigating the digital landscape for succes</h1>
-            <img src="image/speaker.png" alt="speaker image">
-            <p>Our digital marketing agency helps businesses grow and succeed online through a range of services
+        <div class="text">
+            <h1>Navigating the <br> digital landscape <br> for succes</h1>
+            <p>Our digital marketing agency helps businesses<br> grow and succeed online through a range of<br> services
                 including
-                SEO,PPC,social media marketing and content creation.</p>
+                SEO,PPC,social media marketing <br> and content creation.</p>
+            <a class="consultation" href="#" target="_blank">Book a consultation</a>
+        </div>
+        <div class="media">
+            <img src="image/speaker.png" alt="speaker image">
         </div>
     </div>
-    <a class="Book a consultation" href="#" target="_blank ">Book a consultation</a><br>
-    <img src="image/logoshi.png" alt="logo">
+    <img src="image/logoshi.png" alt="logo" class="full-width-logo">
 </body>
 
 </html>
