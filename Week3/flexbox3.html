@@ -13,8 +13,84 @@
 
         .Bossku div {
             display: flex;
+            font-family: 'space grotesk', sans-serif;
+            justify-content: space-between;
+            font-size: 25px;
+        }
+
+        .Bossku .button {
+            border: #000000 solid 2px;
+            padding: 3px 60px;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+        .Bossku .button:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        .Bossku .middle p {
+            margin: 50px;
+            cursor: pointer;
+
+        }
+
+        a.consultation {
+            padding: 15px 20px;
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 10px;
+            font-family: 'space grotesk', sans-serif;
+            margin: 60px;
+        }
+
+        a.consultation:hover {
+            background-color: #555555;
+        }
+
+        .content {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+
+        }
+
+        .content div h1 {
+            font-family: 'space grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            color: #000000;
+            margin: 60px
+        }
+
+        .content div p {
+            font-family: 'space grotesk', sans-serif;
+            font-weight: 400;
+
+            color: #000000;
+            line-height: 1.5;
+            margin: 60px;
+        }
+
+        .content div img {
+            width: auto;
+            height: auto;
+        }
+
+        img {
+            margin-top: 70px;
+            margin: 30px;
+            width: auto;
+            height: auto;
         }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -22,17 +98,28 @@
         <div>
             <h1>Positivus</h1>
         </div>
-        <div>
+        <div class="middle">
             <p>About Us</p>
             <p>Services</p>
             <p>Use Cases</p>
             <p>Pricing</p>
             <p>Blog</p>
         </div>
-        <div>
-            <p>Request a quote</p>
+        <div class="button">
+            <a class="Request a quote" href="#" target="_blank "></a>Request a quote
         </div>
     </div>
+    <div class="content">
+        <div>
+            <h1>Navigating the digital landscape for succes</h1>
+            <img src="image/speaker.png" alt="speaker image">
+            <p>Our digital marketing agency helps businesses grow and succeed online through a range of services
+                including
+                SEO,PPC,social media marketing and content creation.</p>
+        </div>
+    </div>
+    <a class="Book a consultation" href="#" target="_blank ">Book a consultation</a><br>
+    <img src="image/logoshi.png" alt="logo">
 </body>
 
 </html>
