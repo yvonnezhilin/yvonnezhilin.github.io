@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exercise3</title>
     <style>
+        body {
+            max-width: 1400px;
+            margin: auto;
+        }
+
         .Bossku {
             display: flex;
-            padding: 20px 60px;
+            padding: 20px;
         }
 
         .Bossku div {
             display: flex;
             font-family: 'space grotesk', sans-serif;
-            font-size: 35px;
+            font-size: 10px;
             align-items: center;
-            padding-left: 45px;
             margin-right: auto;
-        }
-
-        .Bossku .media {
-            weight: 5px
         }
 
         .Bossku .button {
@@ -32,11 +32,10 @@
 
         .Bossku .button .request-quote {
             border: 2px solid #000000;
-            padding: 30px 40px;
+            padding: 15px 35px;
             text-decoration: none;
             border-radius: 10px;
             color: #000000;
-            display: inline-block;
         }
 
         .Bossku .button .request-quote:hover {
@@ -55,10 +54,9 @@
             text-decoration: none;
             border-radius: 15px;
             font-family: 'space grotesk', sans-serif;
-            font-size: 35px;
+            font-size: 10px;
             align-self: flex-start;
             margin: 55px;
-            margin-top: -15px;
         }
 
         a.consultation:hover {
@@ -78,7 +76,7 @@
 
         .content .text h1 {
             font-family: 'space grotesk', sans-serif;
-            font-size: 120px;
+            font-size: 35px;
             color: #000000;
             letter-spacing: 2.5px;
             padding: 55px;
@@ -86,7 +84,7 @@
 
         .content .text p {
             font-family: 'space grotesk', sans-serif;
-            font-size: 45px;
+            font-size: 10px;
             color: #000000;
             line-height: 1.5;
             word-spacing: 1.5px;
@@ -94,11 +92,8 @@
             padding: 55px;
         }
 
-        .content .media {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 5px;
+        .media img {
+            width: 100%;
         }
 
         .full-width-logo {
