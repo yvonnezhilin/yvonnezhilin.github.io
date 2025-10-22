@@ -13,23 +13,25 @@
 
         .Bossku {
             display: flex;
-            padding: 20px;
+            justify-content: space-between;
         }
 
         .Bossku div {
             display: flex;
             font-family: 'space grotesk', sans-serif;
-            font-size: 10px;
+            font-size: 13px;
             align-items: center;
-            margin-right: auto;
+            margin: 25px;
+            gap: 50px;
         }
 
-        .Bossku .button {
-            margin-left: 35px;
-            display: flex;
-            align-items: center;
+        /* Starlogo */
+        .Bossku .photo {
+            width: 30%;
         }
 
+
+        /* button */
         .Bossku .button .request-quote {
             border: 2px solid #000000;
             padding: 15px 35px;
@@ -43,30 +45,27 @@
             color: #ffffff;
         }
 
-        .Bossku .middle p {
-            margin: 35px;
-        }
-
+        /* Part2div  button*/
         a.consultation {
-            padding: 35px 40px;
+            padding: 15px 25px;
             background-color: #000000;
             color: #ffffff;
             text-decoration: none;
             border-radius: 15px;
             font-family: 'space grotesk', sans-serif;
-            font-size: 10px;
+            font-size: 15px;
             align-self: flex-start;
-            margin: 55px;
+            margin: 45px;
         }
 
         a.consultation:hover {
             background-color: #333;
         }
 
+        /* heading and paragraph */
         .content {
             display: flex;
             justify-content: space-between;
-            padding: 60px;
         }
 
         .content .text {
@@ -76,32 +75,30 @@
 
         .content .text h1 {
             font-family: 'space grotesk', sans-serif;
-            font-size: 35px;
+            font-size: 50px;
             color: #000000;
             letter-spacing: 2.5px;
-            padding: 55px;
+            margin: 25px 55px;
         }
 
         .content .text p {
             font-family: 'space grotesk', sans-serif;
-            font-size: 10px;
+            font-size: 15px;
             color: #000000;
             line-height: 1.5;
             word-spacing: 1.5px;
-            margin-top: -90px;
-            padding: 55px;
+            margin: 0px 55px;
         }
 
+        /* speaker image */
         .media img {
-            width: 100%;
+            width: 80%;
         }
 
+        /* Logo of amazon */
         .full-width-logo {
             display: block;
             width: 100%;
-            max-width: 100%;
-            margin-top: 50px;
-            padding: 25px;
         }
     </style>
     <link
@@ -114,10 +111,10 @@
         <div>
             <img src="image/starlogo.png" alt="starlogo" class="photo">
         </div>
-        <div class="heading">
+        <div>
             <h1>Positivus</h1>
         </div>
-        <div class="middle">
+        <div>
             <p>About Us</p>
             <p>Services</p>
             <p>Use Cases</p>
