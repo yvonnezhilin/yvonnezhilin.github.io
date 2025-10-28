@@ -4,10 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>exercise3.2</title>
+    <style>
+        .fstep {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .fstep div {
+            display: flex;
+            gap: calc(100%/2);
+            flex-direction: row;
+            margin: 30px;
+
+        }
+
+
+        .sstep {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sstep div {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin: 30px;
+        }
+
+        .tstep {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .tstep div {
+            display: flex;
+            font-size: 15px;
+            align-items: center;
+            margin: 30px;
+            gap: 45px;
+            font-family: 'Oxygen', sans-serif;
+            font-weight: 510;
+        }
+
+        .tstep .services {
+            color: orangered;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <!-- Firstdiv -->
+    <div class="fstep">
+        <div>
+            <img src="image/3.2.png" alt="logo">
+        </div>
+        <div class="menu">
+            <img src="image/menu.png" alt="menubar">
+        </div>
+    </div>
+
+    <!-- Seconddiv -->
+    <div class="sstep">
+        <div>
+            <img src="image/3.2.png" alt="logo">
+        </div>
+        <div>
+            <img src="image/number.png" alt="phonenumber">
+            <img src="image/menu.png" alt="menubar">
+        </div>
+    </div>
+
+    <!-- Thirddiv -->
+    <div class="tstep">
+        <div>
+            <img src="image/3.2.png" alt="logo">
+        </div>
+        <div>
+            <p>Home</p>
+            <p class="services">Services </p>
+            <p>Work</p>
+            <p>Project Details</p>
+            <p>Contact</p>
+        </div>
+        <div>
+            <img src="image/contact.png" alt="contactnumber">
+        </div>
+    </div>
 
 </body>
 
