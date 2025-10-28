@@ -6,23 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exercise3.2</title>
     <style>
+        @media screen and (max-width: 1145px) {
+            .wordsbar {
+                display: none;
+            }
+        }
+
+        /* big friends */
         .tstep {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
         }
 
+        /* small friends */
         .tstep div {
             display: flex;
-            font-size: 15px;
             align-items: center;
-            margin: 30px;
-            gap: 45px;
+            gap: 30px;
             font-family: 'Oxygen', sans-serif;
             font-weight: 510;
+            margin: 20px
         }
 
-        .tstep .services {
+        /* chaging words color */
+        .services {
             color: orangered;
+        }
+
+        /* button styling */
+        .contact {
+            background-color: orangered;
+            color: white;
+            border: 0;
+            border-radius: 5px;
+            padding: 15px 20px;
+            font-size: 15px;
+        }
+
+        /* phonenumber image styling */
+        .media {
+            max-width: 100%;
         }
     </style>
 
@@ -34,20 +57,23 @@
 </head>
 
 <body>
-    <!-- Thirddiv -->
     <div class="tstep">
+        <!-- Logo -->
         <div>
             <img src="image/3.2.png" alt="logo">
         </div>
-        <div>
+        <!-- Words -->
+        <div class wordsbar>
             <p>Home</p>
             <p class="services">Services </p>
             <p>Work</p>
             <p>Project Details</p>
             <p>Contact</p>
         </div>
-        <div>
-            <img src="image/contact.png" alt="contactnumber">
+        <!-- rightside things -->
+        <div class right>
+            <img src="image/number.png" alt="phonenumber" class media>
+            <button class="contact">Contact</button>
         </div>
     </div>
 
