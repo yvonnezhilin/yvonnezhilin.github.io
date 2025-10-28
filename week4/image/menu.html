@@ -4,11 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>exercise4.1</title>
+    <style>
+        .home {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px
+        }
+
+        .home div {
+            display: flex;
+            font-family: "Oxygen", sans-serif;
+            font-weight: bold;
+        }
+
+        /* middle content */
+        .words {
+            gap: 30px;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        .special {
+            color: orangered;
+        }
+
+        /* two photo styling width to make sure it can be smaller when push the layer into smaller */
+        .biglogo {
+            width: 100%;
+        }
+
+        .icon {
+            width: 100%;
+        }
+
+        /* button  */
+        .contact {
+            background-color: orangered;
+            color: white;
+            padding: 5px 15px;
+            border: 0;
+            border-radius: 5%;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
+    <div class="home">
+        <div>
+            <img src="image/3.2.png" alt="logo" class="biglogo">
+        </div>
+        <div class="words">
+            <p>Home</p>
+            <p class="special">Services</p>
+            <p>Work</p>
+            <p>Project Details</p>
+            <p>Contact</p>
+        </div>
+        <div>
+            <img src="image/icon.png" alt="telephone" class="icon">
+            <p>555-123-4567</p>
+            <button class="contact">Contact</button>
+        </div>
+    </div>
 </body>
 
 </html>
