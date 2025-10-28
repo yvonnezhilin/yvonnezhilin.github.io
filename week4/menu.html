@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exercise3.2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
     <style>
-        @media screen and (max-width: 1000px) {
-            .wordsbar {
-                display: none;
-            }
-        }
-
         /* big friends */
         .tstep {
             display: flex;
@@ -38,16 +37,16 @@
             color: white;
             border: 0;
             border-radius: 5px;
-            padding: 10px 20px;
+            padding: 5px 15px;
             font-size: 15px;
         }
-    </style>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Space+Grotesk:wght@300..700&display=swap"
-        rel="stylesheet">
+        @media screen and (max-width: 1000px) {
+            .wordsbar {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -57,7 +56,7 @@
             <img src="image/3.2.png" alt="logo">
         </div>
         <!-- Words -->
-        <div class wordsbar>
+        <div class="wordsbar">
             <p>Home</p>
             <p class="services">Services </p>
             <p>Work</p>
@@ -65,8 +64,9 @@
             <p>Contact</p>
         </div>
         <!-- rightside things -->
-        <div class right>
-            <img src="image/number.png" alt="phonenumber" class media>
+        <div class="right">
+            <img src="image/icon.png" alt="phonenumbericon" class="media">
+            <p>555-123-4567</p>
             <button class="contact">Contact</button>
         </div>
     </div>
