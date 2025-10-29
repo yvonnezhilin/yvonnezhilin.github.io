@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise4.2</title>
+</head>
+<style>
+    /* header styling */
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header div {
+        display: flex;
+        gap: 30px;
+        font-family: "Space Grotesk", sans-serif;
+        align-items: center;
+        font-size: 15px;
+        font-weight: 450;
+        padding: 15px 35px;
+    }
+
+    /* header logo styling width */
+    .headerlogo {
+        width: 200px;
+    }
+
+    /* words that have colour */
+    .specialwords {
+        background-color: #B9FF66;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    /* headerbutton */
+    .headerbutton {
+        text-decoration: none;
+        border: 1.5px black solid;
+        border-radius: 10px;
+        padding: 15px 20px;
+        color: #000;
+    }
+
+    /* Firstcontent styling */
+    .fcontent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F3F3F3;
+        border-radius: 20px;
+        margin: 35px;
+    }
+
+    .fcontent div {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 40px;
+    }
+
+    /* photo */
+    .peopleicon {
+        width: 450px;
+
+    }
+
+    /* text div */
+    text {
+        justify-content: space-between;
+    }
+
+    /* first header */
+    .tajuk {
+        font-size: 45px;
+        font-family: "Space Grotesk", sans-serif;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+
+    /* paragraph */
+    .content {
+        font-size: 14px;
+        font-family: "Space Grotesk", sans-serif;
+        line-height: 22px;
+        font-weight: 480;
+    }
+
+    /* second content */
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+
+<body>
+    <!-- header coding -->
+    <div class="header">
+        <!-- leftside -->
+        <div>
+            <img src="image/starlogo.png" alt="headerlogo" class="headerlogo">
+        </div>
+        <!-- rightside -->
+        <div>
+            <p>About us</p>
+            <p>Services</p>
+            <p class="specialwords">Use Cases</p>
+            <p>Pricing</p>
+            <p>Blog</p>
+            <a class="headerbutton" href="#" target="_blank">Request a quote</a>
+        </div>
+    </div>
+    <!-- First content -->
+    <div class="fcontent">
+        <div class="media">
+            <img src="image/pplicon.png" alt="peopleicon" class="peopleicon">
+        </div>
+        <div class="text">
+            <h1 class="tajuk">Proven Success<br>Stories</h1>
+            <p class="content">See how our innovative digital marketing <br>strategies have transformed
+                businesses.<br>Whether through SEO,PPC,social media,or<br>web design,these use cases highlight
+                the<br>tangible impact of our work.Explore the <br>successes and envision what we can
+                achieve<br>together.</p>
+        </div>
+    </div>
+</body>
+
+</html>
