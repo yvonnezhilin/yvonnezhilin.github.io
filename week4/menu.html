@@ -28,7 +28,7 @@
             gap: 30px;
             align-items: center;
             font-size: 16px;
-            display: block;
+            display: flex;
         }
 
         .special {
@@ -66,6 +66,24 @@
                 display: block;
             }
 
+            .contact {
+                display: none;
+            }
+
+        }
+
+        @media screen and (max-width:780px) {
+            .phone {
+                display: none;
+            }
+
+            .icon {
+                display: none;
+            }
+
+            .contact {
+                display: none
+            }
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -89,7 +107,7 @@
             <img src="image/icon.png" alt="telephone" class="icon">
             <p class="phone">555-123-4567</p>
             <button class="contact">Contact</button>
-            <img src="image/menu.png" alt="hamburger">
+            <img src="image/menu.png" alt="hamburger" class="hamburger">
         </div>
     </div>
 </body>
