@@ -8,8 +8,8 @@
     <style>
         .home {
             display: flex;
-            justify-content: space-around;
-            margin: 20px
+            justify-content: space-between;
+            margin: 30px
         }
 
         .home div {
@@ -18,33 +18,54 @@
             font-weight: bold;
         }
 
+        /* logo witdh */
+        .biglogo {
+            width: 200px;
+        }
+
         /* middle content */
         .words {
             gap: 30px;
             align-items: center;
             font-size: 16px;
+            display: block;
         }
 
         .special {
             color: orangered;
         }
 
-        /* two photo styling width to make sure it can be smaller when push the layer into smaller */
-        .biglogo {
-            width: 100%;
-        }
-
-        .icon {
-            width: 100%;
+        /* right content */
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         /* button  */
         .contact {
             background-color: orangered;
             color: white;
-            padding: 5px 15px;
+            padding: 10px 15px;
             border: 0;
             border-radius: 5%;
+        }
+
+        /* hamburger menu */
+        .hamburger {
+            display: none;
+        }
+
+        /* media query */
+        @media screen and (max-width: 1000px) {
+            .words {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,10 +85,11 @@
             <p>Project Details</p>
             <p>Contact</p>
         </div>
-        <div>
+        <div class="right">
             <img src="image/icon.png" alt="telephone" class="icon">
             <p class="phone">555-123-4567</p>
             <button class="contact">Contact</button>
+            <img src="image/menu.png" alt="hamburger">
         </div>
     </div>
 </body>
