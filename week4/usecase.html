@@ -125,19 +125,20 @@
     /* second header */
     .sheader2 {
         color: #FFFF;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 500;
     }
 
     /* content */
     .content2 {
         color: white;
-        font-size: 10px;
+        font-size: 13px;
+        margin-bottom: 40px;
     }
 
     /* button */
     .go {
-        width: 100%;
+        width: 40px;
     }
 
     .read {
@@ -145,25 +146,58 @@
         font-size: 13px;
     }
 
+    /* left*/
+    .leftarm {
+        width: 50%;
+    }
+
+    /* rightside */
+    .rightarm {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 50%;
+    }
+
+    .rightarm div {
+        padding: 15px 10px;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .rightarm h2 {
+        font-size: 25px;
+
+    }
+
+    .rightarm p {
+        font-size: 13px;
+    }
+
     /* rightarm content */
     .upleft {
         background-color: white;
         border-radius: 10px;
+        width: 50%;
     }
 
     .upright {
         background-color: white;
         border-radius: 10px;
+        width: 50%;
     }
 
     .downleft {
         background-color: white;
         border-radius: 10px;
+        width: 50%;
     }
 
     .downright {
         background-color: white;
         border-radius: 10px;
+        width: 50%;
     }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -214,21 +248,23 @@
             <img src="image/buttongo.png" alt="buttongo" class="go">
             <p class="read">Read</p>
         </div>
-        <div class="upleft">
-            <h2>200%</h2>
-            <p>increase in organic traffic</p>
-        </div>
-        <div class="upright">
-            <h2>150%</h2>
-            <p>rise in online sales</p>
-        </div>
-        <div class="downleft">
-            <h2>75%</h2>
-            <p>reduction in cost-per-click (CPC)</p>
-        </div>
-        <div class="downright">
-            <h2>300%</h2>
-            <p>improvement in conversion rate</p>
+        <div class="rightarm">
+            <div class="upleft">
+                <h2>200%</h2>
+                <p>increase in organic traffic</p>
+            </div>
+            <div class="upright">
+                <h2>150%</h2>
+                <p>rise in online sales</p>
+            </div>
+            <div class="downleft">
+                <h2>75%</h2>
+                <p>reduction in cost-per-click (CPC)</p>
+            </div>
+            <div class="downright">
+                <h2>300%</h2>
+                <p>improvement in conversion rate</p>
+            </div>
         </div>
     </div>
 </body>
