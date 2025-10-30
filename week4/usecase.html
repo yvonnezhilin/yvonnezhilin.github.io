@@ -97,6 +97,49 @@
     }
 
     /* second content */
+    .scontent {
+        display: flex;
+        align-items: center;
+        background-color: #000;
+        border-radius: 20px;
+        margin: 30px;
+    }
+
+    .scontent div {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 40px;
+        width: calc(100%/2);
+        font-family: "Space Grotesk", sans-serif;
+    }
+
+    .sheader {
+        background-color: #B9FF66;
+        border-radius: 10px;
+        padding: 5px 3px;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .sheader2 {
+        color: #FFFF;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .content2 {
+        color: white;
+        font-size: 10px;
+    }
+
+    .go {
+        width: 100%;
+    }
+
+    .read {
+        color: #B9FF66;
+        font-size: 13px;
+    }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -139,16 +182,28 @@
     <!-- second content-->
     <div class="scontent">
         <div class="leftarm">
-            <h3 class="sheader">Featured Success Story</h3>
+            <h2 class="sheader">Featured Success Story</h2>
             <h4 class="sheader2">Scaling Success for a Leading E-Commerce Brand</h4>
             <p class="content2">Through a comprehensive SEO and PPC strategy,we helped this e-commerce brand increase
                 visibility,drive traffic,and boost sales.</p>
             <img src="image/buttongo.png" alt="buttongo" class="go">
             <p class="read">Read</p>
         </div>
-        <div class="rightarm">
-            <h3>200%</h3>
+        <div class="upleft">
+            <h2>200%</h2>
             <p>increase in organic traffic</p>
+        </div>
+        <div class="upright">
+            <h2>150%</h2>
+            <p>rise in online sales</p>
+        </div>
+        <div class="downleft">
+            <h2>75%</h2>
+            <p>reduction in cost-per-click (CPC)</p>
+        </div>
+        <div class="downright">
+            <h2>300%</h2>
+            <p>improvement in conversion rate</p>
         </div>
     </div>
 </body>
