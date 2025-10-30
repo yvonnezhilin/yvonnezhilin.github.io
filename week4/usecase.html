@@ -7,6 +7,11 @@
     <title>exercise4.2</title>
 </head>
 <style>
+    body {
+        max-width: 1200px;
+        margin: auto;
+    }
+
     /* header styling */
     .header {
         display: flex;
@@ -47,7 +52,6 @@
     /* Firstcontent styling */
     .fcontent {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         background-color: #F3F3F3;
         border-radius: 20px;
@@ -58,11 +62,12 @@
         display: flex;
         flex-direction: column;
         padding: 30px 40px;
+        width: calc(100%/2);
     }
 
     /* photo */
     .peopleicon {
-        width: 450px;
+        width: 100%;
 
     }
 
@@ -73,7 +78,7 @@
 
     /* first header */
     .tajuk {
-        font-size: 45px;
+        font-size: 35px;
         font-family: "Space Grotesk", sans-serif;
         margin-bottom: 15px;
         font-weight: 500;
@@ -81,7 +86,7 @@
 
     /* paragraph */
     .content {
-        font-size: 14px;
+        font-size: 12px;
         font-family: "Space Grotesk", sans-serif;
         line-height: 22px;
         font-weight: 480;
@@ -118,11 +123,12 @@
             <img src="image/pplicon.png" alt="peopleicon" class="peopleicon">
         </div>
         <div class="text">
-            <h1 class="tajuk">Proven Success<br>Stories</h1>
-            <p class="content">See how our innovative digital marketing <br>strategies have transformed
-                businesses.<br>Whether through SEO,PPC,social media,or<br>web design,these use cases highlight
-                the<br>tangible impact of our work.Explore the <br>successes and envision what we can
-                achieve<br>together.</p>
+            <h1 class="tajuk">Proven Success
+                Stories</h1>
+            <p class="content">See how our innovative digital marketing strategies have transformed
+                businesses.Whether through SEO,PPC,social media,or web design,these use cases highlight
+                the tangible impact of our work.Explore the successes and envision what we can
+                achieve together.</p>
         </div>
     </div>
 </body>
