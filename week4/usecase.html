@@ -151,6 +151,10 @@
         flex-direction: column;
     }
 
+    .leftdown {
+        padding: 1px;
+    }
+
     /* rightside */
     .rightarm {
         display: flex;
@@ -160,22 +164,24 @@
     }
 
     .rightarm div {
-        padding: 15px 10px;
+        padding: 20px 10px;
         align-items: center;
         text-align: center;
         background-color: white;
         border-radius: 10px;
-        width: calc(50%-20px);
-
+        width: calc(50% - 30px);
+        display: flex;
+        flex-direction: column;
     }
 
     .rightarm h2 {
         font-size: 25px;
-
+        margin: 5px;
     }
 
     .rightarm p {
         font-size: 13px;
+        margin: 5px;
     }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -223,6 +229,8 @@
             <h4 class="sheader2">Scaling Success for a Leading E-Commerce Brand</h4>
             <p class="content2">Through a comprehensive SEO and PPC strategy,we helped this e-commerce brand increase
                 visibility,drive traffic,and boost sales.</p>
+        </div>
+        <div class="leftdown">
             <img src="image/buttongo.png" alt="buttongo" class="go">
             <p class="read">Read</p>
         </div>
