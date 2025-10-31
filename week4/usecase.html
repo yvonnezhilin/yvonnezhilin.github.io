@@ -5,185 +5,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exercise4.2</title>
+    <style>
+        body {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* header styling */
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header div {
+            display: flex;
+            gap: 30px;
+            font-family: "Space Grotesk", sans-serif;
+            align-items: center;
+            font-size: 15px;
+            font-weight: 450;
+            padding: 15px 35px;
+        }
+
+        /* header logo styling width */
+        .headerlogo {
+            width: 200px;
+        }
+
+        /* words that have colour */
+        .specialwords {
+            background-color: #B9FF66;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* headerbutton */
+        .headerbutton {
+            text-decoration: none;
+            border: 1.5px black solid;
+            border-radius: 10px;
+            padding: 15px 20px;
+            color: #000;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        /* Firstcontent styling */
+        .fcontent {
+            display: flex;
+            align-items: center;
+            background-color: #F3F3F3;
+            border-radius: 20px;
+            margin: 35px;
+        }
+
+        .fcontent div {
+            display: flex;
+            flex-direction: column;
+            padding: 30px 40px;
+            width: calc(100%/2);
+        }
+
+        /* photo */
+        .peopleicon {
+            width: 100%;
+
+        }
+
+        /* text div */
+        text {
+            justify-content: space-between;
+        }
+
+        /* first header */
+        .tajuk {
+            font-size: 35px;
+            font-family: "Space Grotesk", sans-serif;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        /* paragraph */
+        .content {
+            font-size: 12px;
+            font-family: "Space Grotesk", sans-serif;
+            line-height: 22px;
+            font-weight: 480;
+        }
+
+        /* second content */
+        .scontent {
+            display: flex;
+            align-items: center;
+            background-color: #191A23;
+            border-radius: 20px;
+            margin: 30px;
+        }
+
+        .scontent div {
+            display: flex;
+            padding: 30px 40px;
+            width: calc(100%/2);
+            font-family: "Space Grotesk", sans-serif;
+        }
+
+        /* header */
+        .leftarm .sheader {
+            background-color: #B9FF66;
+            border-radius: 10px;
+            padding: 5px 3px;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        /* second header */
+        .sheader2 {
+            color: #FFFF;
+            font-size: 22px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        /* content */
+        .content2 {
+            color: white;
+            font-size: 13px;
+            margin-bottom: 40px;
+        }
+
+        /* button */
+        .go {
+            width: 40px;
+        }
+
+        .read {
+            color: #B9FF66;
+            font-size: 13px;
+        }
+
+        /* left*/
+        .leftarm {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* rightside */
+        .rightarm {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 50%;
+        }
+
+        .rightarm div {
+            padding: 20px 10px;
+            align-items: center;
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            width: calc(50% - 30px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rightarm h2 {
+            font-size: 25px;
+            margin: 5px;
+        }
+
+        .rightarm p {
+            font-size: 13px;
+            margin: 5px;
+        }
+
+        .leftarm .leftdown {
+            padding: 0px;
+        }
+    </style>
 </head>
-<style>
-    body {
-        max-width: 1200px;
-        margin: auto;
-    }
 
-    /* header styling */
-    .header {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .header div {
-        display: flex;
-        gap: 30px;
-        font-family: "Space Grotesk", sans-serif;
-        align-items: center;
-        font-size: 15px;
-        font-weight: 450;
-        padding: 15px 35px;
-    }
-
-    /* header logo styling width */
-    .headerlogo {
-        width: 200px;
-    }
-
-    /* words that have colour */
-    .specialwords {
-        background-color: #B9FF66;
-        padding: 5px 10px;
-        border-radius: 5px;
-    }
-
-    /* headerbutton */
-    .headerbutton {
-        text-decoration: none;
-        border: 1.5px black solid;
-        border-radius: 10px;
-        padding: 15px 20px;
-        color: #000;
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    /* Firstcontent styling */
-    .fcontent {
-        display: flex;
-        align-items: center;
-        background-color: #F3F3F3;
-        border-radius: 20px;
-        margin: 35px;
-    }
-
-    .fcontent div {
-        display: flex;
-        flex-direction: column;
-        padding: 30px 40px;
-        width: calc(100%/2);
-    }
-
-    /* photo */
-    .peopleicon {
-        width: 100%;
-
-    }
-
-    /* text div */
-    text {
-        justify-content: space-between;
-    }
-
-    /* first header */
-    .tajuk {
-        font-size: 35px;
-        font-family: "Space Grotesk", sans-serif;
-        margin-bottom: 15px;
-        font-weight: 500;
-    }
-
-    /* paragraph */
-    .content {
-        font-size: 12px;
-        font-family: "Space Grotesk", sans-serif;
-        line-height: 22px;
-        font-weight: 480;
-    }
-
-    /* second content */
-    .scontent {
-        display: flex;
-        align-items: center;
-        background-color: #000;
-        border-radius: 20px;
-        margin: 30px;
-    }
-
-    .scontent div {
-        display: flex;
-        padding: 30px 40px;
-        width: calc(100%/2);
-        font-family: "Space Grotesk", sans-serif;
-    }
-
-    /* header */
-    .sheader {
-        background-color: #B9FF66;
-        border-radius: 10px;
-        padding: 5px 3px;
-        font-size: 25px;
-        font-weight: 500;
-    }
-
-    /* second header */
-    .sheader2 {
-        color: #FFFF;
-        font-size: 20px;
-        font-weight: 500;
-    }
-
-    /* content */
-    .content2 {
-        color: white;
-        font-size: 13px;
-        margin-bottom: 40px;
-    }
-
-    /* button */
-    .go {
-        width: 40px;
-    }
-
-    .read {
-        color: #B9FF66;
-        font-size: 13px;
-    }
-
-    /* left*/
-    .leftarm {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .leftarm.leftdown {
-        padding: 0px;
-    }
-
-    /* rightside */
-    .rightarm {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        width: 50%;
-    }
-
-    .rightarm div {
-        padding: 20px 10px;
-        align-items: center;
-        text-align: center;
-        background-color: white;
-        border-radius: 10px;
-        width: calc(50% - 30px);
-        display: flex;
-        flex-direction: column;
-    }
-
-    .rightarm h2 {
-        font-size: 25px;
-        margin: 5px;
-    }
-
-    .rightarm p {
-        font-size: 13px;
-        margin: 5px;
-    }
-</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
