@@ -107,7 +107,6 @@
 
     .scontent div {
         display: flex;
-        flex-direction: column;
         padding: 30px 40px;
         width: calc(100%/2);
         font-family: "Space Grotesk", sans-serif;
@@ -148,7 +147,8 @@
 
     /* left*/
     .leftarm {
-        width: 50%;
+        display: flex;
+        flex-direction: column;
     }
 
     /* rightside */
@@ -163,6 +163,9 @@
         padding: 15px 10px;
         align-items: center;
         text-align: center;
+        background-color: white;
+        border-radius: 10px;
+        width: calc(50%-20px);
 
     }
 
@@ -173,31 +176,6 @@
 
     .rightarm p {
         font-size: 13px;
-    }
-
-    /* rightarm content */
-    .upleft {
-        background-color: white;
-        border-radius: 10px;
-        width: 50%;
-    }
-
-    .upright {
-        background-color: white;
-        border-radius: 10px;
-        width: 50%;
-    }
-
-    .downleft {
-        background-color: white;
-        border-radius: 10px;
-        width: 50%;
-    }
-
-    .downright {
-        background-color: white;
-        border-radius: 10px;
-        width: 50%;
     }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -219,7 +197,7 @@
             <p>Services</p>
             <p class="specialwords">Use Cases</p>
             <p>Pricing</p>
-            <p>Blog</p>
+            <p>Blog</p>1
             <a class="headerbutton" href="#" target="_blank">Request a quote</a>
             <img src="image/menu.png" alt="hamburger" class="hamburger">
         </div>
@@ -249,19 +227,19 @@
             <p class="read">Read</p>
         </div>
         <div class="rightarm">
-            <div class="upleft">
+            <div>
                 <h2>200%</h2>
                 <p>increase in organic traffic</p>
             </div>
-            <div class="upright">
+            <div>
                 <h2>150%</h2>
                 <p>rise in online sales</p>
             </div>
-            <div class="downleft">
+            <div>
                 <h2>75%</h2>
                 <p>reduction in cost-per-click (CPC)</p>
             </div>
-            <div class="downright">
+            <div>
                 <h2>300%</h2>
                 <p>improvement in conversion rate</p>
             </div>
