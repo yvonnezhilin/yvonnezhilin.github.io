@@ -152,6 +152,10 @@
             flex-direction: column;
         }
 
+        .featured {
+            display: none;
+        }
+
         /* rightside */
         .rightarm {
             display: flex;
@@ -185,6 +189,40 @@
         .leftarm .leftdown {
             padding: 0px;
         }
+
+        .featured {
+            width: 60%;
+        }
+
+        @media screen and (max-width:790px) {
+
+            .headerclick {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .fcontent {
+                background-color: white;
+                flex-wrap: wrap;
+            }
+
+            .sheader {
+                display: none;
+            }
+
+            .featured {
+                display: block;
+                align-items: start;
+            }
+
+            .scontent {
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 
@@ -202,13 +240,15 @@
             <img src="image/starlogo.png" alt="headerlogo" class="headerlogo">
         </div>
         <!-- rightside -->
-        <div>
+        <div class="headerclick">
             <p>About us</p>
             <p>Services</p>
             <p class="specialwords">Use Cases</p>
             <p>Pricing</p>
             <p>Blog</p>
             <a class="headerbutton" href="#" target="_blank">Request a quote</a>
+        </div>
+        <div>
             <img src="image/menu.png" alt="hamburger" class="hamburger">
         </div>
     </div>
@@ -230,6 +270,7 @@
     <div class="scontent">
         <div class="leftarm">
             <h2 class="sheader">Featured Success Story</h2>
+            <img src="image/featured.png" alt="icon" class="featured">
             <h4 class="sheader2">Scaling Success for a Leading E-Commerce Brand</h4>
             <p class="content2">Through a comprehensive SEO and PPC strategy,we helped this e-commerce brand increase
                 visibility,drive traffic,and boost sales.</p>
