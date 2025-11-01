@@ -48,7 +48,7 @@
             color: #000;
         }
 
-        .hamburger {
+        .header .hamburger {
             display: none;
         }
 
@@ -69,9 +69,14 @@
         }
 
         /* photo */
-        .peopleicon {
+        .media {
             width: 100%;
 
+        }
+
+        .fcontent .whiteicon {
+            width: 100%;
+            display: none;
         }
 
         /* text div */
@@ -186,6 +191,10 @@
             margin: 5px;
         }
 
+        .scontent .rightdown {
+            display: none;
+        }
+
         .leftarm .leftdown {
             padding: 0px;
         }
@@ -196,11 +205,11 @@
 
         @media screen and (max-width:790px) {
 
-            .headerclick {
+            .header .headerclick {
                 display: none;
             }
 
-            .hamburger {
+            .header .hamburger {
                 display: block;
             }
 
@@ -221,6 +230,34 @@
             .scontent {
                 flex-wrap: wrap;
                 flex-direction: column;
+            }
+
+            .tajuk {
+                display: none
+            }
+
+            .scontent .rightarm {
+                width: 100%
+            }
+
+            .leftarm .leftdown {
+                display: none;
+            }
+
+            .fcontent .whiteicon {
+                display: block;
+            }
+
+            .fcontent .media {
+                display: none;
+            }
+
+            .fcontent .content {
+                font-size: 20px;
+            }
+
+            .scontent .rightdown {
+                display: block;
             }
         }
     </style>
@@ -248,14 +285,17 @@
             <p>Blog</p>
             <a class="headerbutton" href="#" target="_blank">Request a quote</a>
         </div>
-        <div>
-            <img src="image/menu.png" alt="hamburger" class="hamburger">
+        <div class="hamburger">
+            <img src="image/menu.png" alt="hamburger">
         </div>
     </div>
     <!-- First content -->
     <div class="fcontent">
         <div class="media">
-            <img src="image/pplicon.png" alt="peopleicon" class="peopleicon">
+            <img src="image/pplicon.png" alt="peopleicon">
+        </div>
+        <div class="whiteicon">
+            <img src="image/white.png" alt="whitebackground">
         </div>
         <div class="text">
             <h1 class="tajuk">Proven Success
@@ -296,6 +336,10 @@
                 <h2>300%</h2>
                 <p>improvement in conversion rate</p>
             </div>
+        </div>
+        <div class="rightdown">
+            <img src="image/buttongo.png" alt="buttongo" class="go">
+            <p class="read">Read</p>
         </div>
     </div>
 </body>
