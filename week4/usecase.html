@@ -70,8 +70,7 @@
 
         /* photo */
         .media {
-            width: 100%;
-
+            width: 50%;
         }
 
         .fcontent .whiteicon {
@@ -164,6 +163,7 @@
 
         .featured {
             display: none;
+            width: 60%;
         }
 
         /* rightside */
@@ -204,9 +204,23 @@
             padding: 0px;
         }
 
-        .featured {
-            width: 60%;
+        /* keep two items per row on small screens (>= two-per-row at 790px) */
+        @media (max-width: 790px) {
+
+            /* allow the right block to take full width so its children can sit 2-per-row */
+            .rightarm {
+                width: 100%;
+            }
+
+            /* make each child half width (minus gap) so two appear per row */
+            .rightarm div {
+                width: calc(50% - 10px);
+                padding: 12px 6px;
+                /* slightly smaller padding to fit */
+            }
         }
+
+
 
         @media screen and (max-width:790px) {
 
@@ -262,11 +276,26 @@
             }
 
             .scontent .rightdown {
-                display: block;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            /* ensure the text sits neatly beside the icon */
+            .scontent .rightdown p {
+                margin: 0;
             }
 
             .scontent .featured2 {
                 display: block;
+            }
+
+            .rightarm div {
+                width: 100%;
+            }
+
+            .featured {
+                width: 70px;
             }
         }
     </style>
@@ -316,40 +345,43 @@
         </div>
     </div>
     <!-- second content-->
-    <div class="scontent">
-        <div class="leftarm">
-            <h2 class="sheader">Featured Success Story</h2>
-            <img src="image/icon star.png" alt="icon" class="featured">
-            <h2 class="featured2">Featured</h2>
-            <h4 class="sheader2">Scaling Success for a Leading E-Commerce Brand</h4>
-            <p class="content2">Through a comprehensive SEO and PPC strategy,we helped this e-commerce brand increase
-                visibility,drive traffic,and boost sales.</p>
-            <div class="leftdown">
+    <div>
+        <div class="scontent">
+            <div class="leftarm">
+                <h2 class="sheader">Featured Success Story</h2>
+                <img src="image/icon star.png" alt="icon" class="featured">
+                <h2 class="featured2">Featured</h2>
+                <h4 class="sheader2">Scaling Success for a Leading E-Commerce Brand</h4>
+                <p class="content2">Through a comprehensive SEO and PPC strategy,we helped this e-commerce brand
+                    increase
+                    visibility,drive traffic,and boost sales.</p>
+                <div class="leftdown">
+                    <img src="image/buttongo.png" alt="buttongo" class="go">
+                    <p class="read">Read</p>
+                </div>
+            </div>
+            <div class="rightarm">
+                <div>
+                    <h2>200%</h2>
+                    <p>increase in organic traffic</p>
+                </div>
+                <div>
+                    <h2>150%</h2>
+                    <p>rise in online sales</p>
+                </div>
+                <div>
+                    <h2>75%</h2>
+                    <p>reduction in cost-per-click (CPC)</p>
+                </div>
+                <div>
+                    <h2>300%</h2>
+                    <p>improvement in conversion rate</p>
+                </div>
+            </div>
+            <div class="rightdown">
                 <img src="image/buttongo.png" alt="buttongo" class="go">
                 <p class="read">Read</p>
             </div>
-        </div>
-        <div class="rightarm">
-            <div>
-                <h2>200%</h2>
-                <p>increase in organic traffic</p>
-            </div>
-            <div>
-                <h2>150%</h2>
-                <p>rise in online sales</p>
-            </div>
-            <div>
-                <h2>75%</h2>
-                <p>reduction in cost-per-click (CPC)</p>
-            </div>
-            <div>
-                <h2>300%</h2>
-                <p>improvement in conversion rate</p>
-            </div>
-        </div>
-        <div class="rightdown">
-            <img src="image/buttongo.png" alt="buttongo" class="go">
-            <p class="read">Read</p>
         </div>
     </div>
 </body>
