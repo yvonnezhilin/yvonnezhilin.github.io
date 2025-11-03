@@ -79,7 +79,7 @@
         }
 
         /* text div */
-        text {
+        .text {
             justify-content: space-between;
         }
 
@@ -204,23 +204,9 @@
             padding: 0px;
         }
 
-        /* keep two items per row on small screens (>= two-per-row at 790px) */
-        @media (max-width: 790px) {
-
-            /* allow the right block to take full width so its children can sit 2-per-row */
-            .rightarm {
-                width: 100%;
-            }
-
-            /* make each child half width (minus gap) so two appear per row */
-            .rightarm div {
-                width: calc(50% - 10px);
-                padding: 12px 6px;
-                /* slightly smaller padding to fit */
-            }
+        .mobiletitle {
+            display: none;
         }
-
-
 
         @media screen and (max-width:790px) {
 
@@ -232,18 +218,28 @@
                 display: block;
             }
 
+            .leftarm {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
             .fcontent {
                 background-color: white;
-                flex-wrap: wrap;
+                flex-direction: column;
+                margin: 40px auto;
+
+            }
+
+            .fcontent .content {
+                font-size: 16px;
+                line-height: 26px;
+                color: #333;
+                max-width: 90%;
             }
 
             .sheader {
                 display: none;
-            }
-
-            .featured {
-                display: block;
-                align-items: start;
             }
 
             .scontent {
@@ -255,16 +251,22 @@
                 display: none
             }
 
-            .scontent .rightarm {
-                width: 100%
-            }
-
             .leftarm .leftdown {
                 display: none;
             }
 
             .fcontent .whiteicon {
-                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 5px;
+            }
+
+            .fcontent .whiteicon {
+                width: 80%;
+                max-width: 400px;
+                height: auto;
             }
 
             .fcontent .media {
@@ -273,32 +275,68 @@
 
             .fcontent .content {
                 font-size: 20px;
+
             }
 
             .scontent .rightdown {
                 display: flex;
                 align-items: center;
                 gap: 10px;
-            }
-
-            /* ensure the text sits neatly beside the icon */
-            .scontent .rightdown p {
                 margin: 0;
             }
 
-            .scontent .featured2 {
-                display: block;
+
+            .featurewrap {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 15px;
             }
 
-            .rightarm div {
-                width: 100%;
+            .scontent .featured2 {
+                display: inline-block;
+                color: #B9FF66;
+                font-size: 22px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-transform: uppercase;
             }
 
             .featured {
-                width: 70px;
+                display: inline-block;
+                width: 58px;
+                height: auto;
+                padding: 0px;
             }
+
+            .rightarm {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .rightarm div {
+                width: 90%;
+                max-width: 380px;
+                padding: 20px;
+                text-align: center;
+                border-radius: 12px;
+            }
+
+            .mobiletitle {
+                display: block;
+                font-size: 48px;
+                padding: 10px;
+                font-weight: 700;
+                text-align: center;
+                font-family: "Space Grotesk", sans-serif;
+                margin-bottom: 10px;
+                color: #000;
+            }
+
         }
     </style>
+
 </head>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -332,12 +370,14 @@
         <div class="media">
             <img src="image/pplicon.png" alt="peopleicon">
         </div>
+
+        <h1 class="mobiletitle">Proven Success Stories</h1> <!-- ✅ 新增 -->
+
         <div class="whiteicon">
             <img src="image/white.png" alt="whitebackground">
         </div>
         <div class="text">
-            <h1 class="tajuk">Proven Success
-                Stories</h1>
+            <h1 class="tajuk">Proven Success Stories</h1>
             <p class="content">See how our innovative digital marketing strategies have transformed
                 businesses.Whether through SEO,PPC,social media,or web design,these use cases highlight
                 the tangible impact of our work.Explore the successes and envision what we can
@@ -349,12 +389,15 @@
         <div class="scontent">
             <div class="leftarm">
                 <h2 class="sheader">Featured Success Story</h2>
-                <img src="image/icon star.png" alt="icon" class="featured">
-                <h2 class="featured2">Featured</h2>
+
+                <div class="featurewrap">
+                    <img src="image/icon star.png" alt="icon" class="featured">
+                    <h2 class="featured2">Featured</h2>
+                </div>
+
                 <h4 class="sheader2">Scaling Success for a Leading E-Commerce Brand</h4>
-                <p class="content2">Through a comprehensive SEO and PPC strategy,we helped this e-commerce brand
-                    increase
-                    visibility,drive traffic,and boost sales.</p>
+                <p class="content2">Through a comprehensive SEO and PPC strategy, we helped this e-commerce brand
+                    increase visibility, drive traffic, and boost sales.</p>
                 <div class="leftdown">
                     <img src="image/buttongo.png" alt="buttongo" class="go">
                     <p class="read">Read</p>
