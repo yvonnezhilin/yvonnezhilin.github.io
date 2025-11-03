@@ -4,97 +4,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction</title>
+    <title>Yvonne Personal Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
     <style>
-        /* header */
-        .header {
-            display: flex;
-            background-color: #fff;
-            justify-content: space-between;
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-image: url(image/star\ background.jpg);
+            background-size: cover;
+            background-position: center;
         }
 
-        .header div {
+        /* Header */
+        .header {
             display: flex;
-            width: calc(100% / 2);
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px 20px;
         }
 
         .logo {
-            width: 50px;
+            width: 40px;
         }
 
-        .instagram {
-            width: 50px;
+        .social img {
+            width: 40px;
         }
 
-        /* content */
+        /* Content */
         .content {
-            background-color: #ffcff3;
+            text-align: center;
+            padding: 40px 20px;
+            color: #fff;
         }
 
-
-        .selfie {
-            width: 150px
+        .profile {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-image: url('image/yvonne.jpeg');
+            background-size: cover;
+            background-position: center;
+            margin: auto;
+            display: block;
         }
 
-        .content h3 {
-            font-size: 25px;
+        h2 {
+            margin: 10px 5px;
+            font-size: 24px;
         }
 
-        .content h4 {
-            font-size: 20px;
+        h3 {
+            margin: 5px 15px;
+            font-weight: 300;
         }
 
-        .content p {
-            font-size: 15px;
+        p {
+            padding: 10px;
+            max-width: 400px;
+            margin: auto;
+            line-height: 1.6;
+            font-size: 14px;
         }
 
-        /* lastder */
-        .lastcover {}
+        .weeks {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+
+        }
+
+        .week-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 250px;
+            border-radius: 15px;
+            padding: 15px;
+        }
+
+        .week-box h4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .week-box h4 img {
+            width: 20px;
+            margin-right: 8px;
+        }
+
+        .week-box a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            background-color: white;
+            padding: 6px 0;
+            margin: 5px 0;
+            border-radius: 10px;
+        }
+
+        .week-box a:hover {
+            background-color: #FF3FFC;
+        }
+
+        /* lastheader */
+        .lastheader {
+            background-color: #fff;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .lastheader img {
+            width: 30px;
+            padding: 5px
+        }
+
+        .lastheader p {
+            font-size: 13px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .weeks {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div>
-        <div class="header">
-            <img src="image/logo.jpg" alt="dogpicture" class="logo">
-            <a href="https://www.instagram.com/" alt="instagram" class="instagram"><img src="image/instagram-logo.jpg"
-                    alt="instagram" class="instagram"></a>
+    <!-- Header -->
+    <div class="header">
+        <img src="image/logo.jpg" alt="logo" class="logo">
+        <a href="https://www.instagram.com/" class="social" target="_blank">
+            <img src="image/instagram-logo.jpg" alt="Instagram logo">
+        </a>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <div class="profile"></div>
+        <h2>Yvonne Chong Zhi Lin</h2>
+        <h3>Web Publishing</h3>
+        <p>Hello! I'm Yvonne, a multimedia student. I love to eat and do bullet journaling. Welcome to my personal page!
+        </p>
+
+        <div class="weeks">
+            <div class="week-box">
+                <h4><img src="image/homework.png" alt="assignment"> Week 2</h4>
+                <a href="http://127.0.0.1:5500/week2/artist.html" target="_blank">Exercise 1</a>
+                <a href="http://127.0.0.1:5500/week2/button.html" target="_blank">Exercise 2</a>
+                <a href="http://127.0.0.1:5500/week2/self-intro.html" target="_blank">Exercise 3</a>
+            </div>
+
+            <div class="week-box">
+                <h4><img src="image/homework.png" alt="assignment"> Week 3</h4>
+                <a href="http://127.0.0.1:5500/week3/flexbox1.html" target="_blank">Exercise 1</a>
+                <a href="http://127.0.0.1:5500/week3/flexbox2.html" target="_blank">Exercise 2</a>
+                <a href="http://127.0.0.1:5500/week3/flexbox3.html" target="_blank">Exercise 3</a>
+            </div>
+
+            <div class="week-box">
+                <h4><img src="image/homework.png" alt="assignment"> Week 4</h4>
+                <a href="http://127.0.0.1:5500/week4/menu.html" target="_blank">Exercise 1</a>
+                <a href="http://127.0.0.1:5500/week4/usecase.html" target="_blank">Exercise 2</a>
+            </div>
+
+            <div class="week-box">
+                <h4><img src="image/homework.png" alt="assignment"> Week 5</h4>
+                <a href="#" target="_blank">Exercise 1</a>
+                <a href="#" target="_blank">Exercise 2</a>
+            </div>
         </div>
     </div>
-    <!-- first -->
-    <div>
-        <div class="content">
-            <img src="image/yvonne.jpeg" alt="my picture" class="selfie">
-            <h3>Yvonne Chong Zhi Lin</h3>
-            <h4>Web Publishing</h4>
-            <p>Hello!I'm yvonne,a multimedia student.I love to eat and doing some bullet journal.Welcome to my personal
-                page.</p>
-            <div class="exercise>" <div>
-                <h3>Week2</h3>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-            </div>
-            <div>
-                <h3>Week3</h3>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-            </div>
-            <div>
-                <h3>Week4</h3>
-                <a href="#"></a>
-                <a href="#"></a>
-            </div>
-        </div>
-    </div>
-    <!-- last der -->
-    <div>
-        <div class="last cover">
-            <a href="https://www.instagram.com/" alt="instagram" class="instagram"><img src="image/instagram-logo.jpg"
-                    alt="instagram" class="instagram"></a>
-            <p>@ 2025 Yvonne Chong. All rights reserved.</p>
-        </div>
+
+    <!-- Footer -->
+    <div class="lastheader">
+        <p>© 2025 Yvonne Chong. All rights reserved.</p>
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="image/instagram-logo.jpg" alt="Instagram logo">
+        </a>
     </div>
 </body>
 
