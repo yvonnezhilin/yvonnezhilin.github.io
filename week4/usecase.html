@@ -58,7 +58,9 @@
             align-items: center;
             background-color: #F3F3F3;
             border-radius: 20px;
-            margin: 35px;
+            margin: auto;
+            margin-bottom: 35px;
+            max-width: 90%;
         }
 
         .fcontent div {
@@ -106,6 +108,8 @@
             background-color: #191A23;
             border-radius: 20px;
             margin: 10px;
+            max-width: 90%;
+            margin: auto;
         }
 
         .scontent div {
@@ -173,6 +177,7 @@
             flex-wrap: wrap;
             gap: 25px;
             width: 50%;
+
         }
 
         .rightarm div {
@@ -221,9 +226,13 @@
 
             .leftarm {
                 display: flex;
-                align-items: center;
+                flex-direction: column;
+                align-items: flex-start;
                 gap: 8px;
+                width: 100%;
+                margin-bottom: 20px;
             }
+
 
             .fcontent {
                 background-color: white;
@@ -246,6 +255,8 @@
             .scontent {
                 flex-wrap: wrap;
                 flex-direction: column;
+                max-width: 80%;
+                margin: auto;
             }
 
             .tajuk {
@@ -276,6 +287,7 @@
 
             .fcontent .content {
                 font-size: 20px;
+                max-width: 100%;
 
             }
 
@@ -289,23 +301,26 @@
 
             .featurewrap {
                 display: flex;
-                margin-bottom: 15px;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+                margin-bottom: 10px;
+                width: auto;
             }
 
             .scontent .featured2 {
                 display: inline-block;
                 color: #B9FF66;
-                font-size: 22px;
+                font-size: 20px;
                 font-weight: 700;
                 letter-spacing: 1px;
-                text-transform: uppercase;
             }
 
             .featured {
                 display: inline-block;
-                width: 58px;
+                width: 50px;
                 height: auto;
-                padding: 0px;
             }
 
             .rightarm {
@@ -324,11 +339,13 @@
             }
 
             .mobiletitle {
+                max-width: 70%;
                 display: block;
-                font-size: 48px;
-                padding: 10px;
+                font-size: 50px;
+                margin: 10px;
+                padding: 0px 30px;
                 font-weight: 700;
-                text-align: center;
+                text-align: left;
                 font-family: "Space Grotesk", sans-serif;
                 margin-bottom: 10px;
                 color: #000;
