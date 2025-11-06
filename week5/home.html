@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise3</title>
+    <style>
+        body {
+            max-width: 1400px;
+            margin: auto;
+        }
+
+        .Bossku {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Bossku div {
+            display: flex;
+            font-family: 'space grotesk', sans-serif;
+            font-size: 15px;
+            align-items: center;
+            margin: 30px;
+            gap: 45px;
+        }
+
+        /* Starlogo */
+        .photo {
+            width: 85%;
+        }
+
+        /* button */
+        .request-quote {
+            border: 2px solid #000000;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 10px;
+            color: #000000;
+            background-color: #ffffff;
+        }
+
+        .request-quote:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        /* Part2div  button*/
+        a.consultation {
+            padding: 15px 25px;
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 15px;
+            font-family: 'space grotesk', sans-serif;
+            font-size: 15px;
+            align-self: flex-start;
+            margin: 40px;
+        }
+
+        a.consultation:hover {
+            background-color: #333;
+        }
+
+        /* heading and paragraph */
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content h1 {
+            font-family: 'space grotesk', sans-serif;
+            font-size: 50px;
+            color: #000000;
+            letter-spacing: 2.0px;
+            margin: 40px 50px;
+        }
+
+        .content p {
+            font-family: 'space grotesk', sans-serif;
+            font-size: 15px;
+            color: #000000;
+            line-height: 1.5;
+            word-spacing: 1.5px;
+            margin: 0px 50px;
+        }
+
+        /* speaker image */
+        .media img {
+            width: 90%;
+        }
+
+        /* Logo of amazon */
+        .full-width-logo {
+            display: block;
+            width: 100%;
+        }
+    </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="Bossku">
+        <div>
+            <img src="image/starlogo.png" alt="starlogo" class="photo">
+        </div>
+        <div>
+            <p>About Us</p>
+            <p>Services</p>
+            <p>Use Cases</p>
+            <p>Pricing</p>
+            <p>Blog</p>
+            <a class="request-quote" href="#" target="_blank">Request a quote</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="text">
+            <h1>Navigating the <br> digital landscape <br> for succes</h1>
+            <p>Our digital marketing agency helps businesses<br> grow and succeed online through a range of<br> services
+                including
+                SEO,PPC,social media marketing <br> and content creation.</p>
+            <a class="consultation" href="#" target="_blank">Book a consultation</a>
+        </div>
+        <div class="media">
+            <img src="image/speaker.png" alt="speaker image">
+        </div>
+    </div>
+    <img src="image/logoshi.png" alt="logo" class="full-width-logo">
+</body>
+
+</html>

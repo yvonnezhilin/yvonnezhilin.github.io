@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise4.2</title>
+    <style>
+        body {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* header styling */
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header div {
+            display: flex;
+            gap: 30px;
+            font-family: "Space Grotesk", sans-serif;
+            align-items: center;
+            font-size: 13px;
+            font-weight: 450;
+            padding: 15px 35px;
+        }
+
+        /* header logo styling width */
+        .headerlogo {
+            width: 200px;
+        }
+
+        /* words that have colour */
+        .specialwords {
+            background-color: #B9FF66;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* headerbutton */
+        .headerbutton {
+            text-decoration: none;
+            border: 1.5px black solid;
+            border-radius: 10px;
+            padding: 15px 20px;
+            color: #000;
+        }
+
+        .header .hamburger {
+            display: none;
+        }
+
+        /* Firstcontent styling */
+        .fcontent {
+            display: flex;
+            align-items: center;
+            background-color: #F3F3F3;
+            border-radius: 20px;
+            margin: auto;
+            margin-bottom: 35px;
+            max-width: 90%;
+        }
+
+        .fcontent div {
+            display: flex;
+            flex-direction: column;
+            padding: 30px 40px;
+            width: calc(100%/2);
+        }
+
+        /* photo */
+        .media {
+            width: 50%;
+        }
+
+        .fcontent .whiteicon {
+            width: 100%;
+            display: none;
+        }
+
+        /* text div */
+        .text {
+            justify-content: space-between;
+        }
+
+        /* first header */
+        .tajuk {
+            font-size: 35px;
+            font-family: "Space Grotesk", sans-serif;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        /* paragraph */
+        .content {
+            font-size: 12px;
+            font-family: "Space Grotesk", sans-serif;
+            line-height: 22px;
+            font-weight: 480;
+        }
+
+        /* second content */
+        .scontent {
+            display: flex;
+            align-items: center;
+            background-color: #191A23;
+            border-radius: 20px;
+            margin: 10px;
+            max-width: 90%;
+            margin: auto;
+        }
+
+        .scontent div {
+            display: flex;
+            padding: 15px 20px;
+            width: calc(100%/2);
+            font-family: "Space Grotesk", sans-serif;
+        }
+
+        .scontent .featured2 {
+            display: none;
+            color: #B9FF66;
+        }
+
+        /* header */
+        .sheader {
+            background-color: #B9FF66;
+            border-radius: 10px;
+            padding: 5px 3px;
+            font-size: 25px;
+            font-weight: 500;
+            width: 80%
+        }
+
+        /* second header */
+        .sheader2 {
+            color: #FFFF;
+            font-size: 22px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        /* content */
+        .content2 {
+            color: white;
+            font-size: 13px;
+            margin-bottom: 40px;
+        }
+
+        /* button */
+        .go {
+            width: 40px;
+        }
+
+        .read {
+            color: #B9FF66;
+            font-size: 13px;
+        }
+
+        /* left*/
+        .leftarm {
+            display: flex;
+            flex-direction: column;
+            margin-left: 15px;
+        }
+
+        .featured {
+            display: none;
+            width: 60%;
+        }
+
+        /* rightside */
+        .rightarm {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            width: 50%;
+
+        }
+
+        .rightarm div {
+            padding: 25px 5px;
+            align-items: center;
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            width: calc(40% - 20px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rightarm h2 {
+            font-size: 25px;
+            margin: 5px;
+
+        }
+
+        .rightarm p {
+            font-size: 13px;
+            margin: 5px;
+        }
+
+        .scontent .rightdown {
+            display: none;
+        }
+
+        .leftarm .leftdown {
+            padding: 0px;
+        }
+
+        .mobiletitle {
+            display: none;
+        }
+
+        @media screen and (max-width:790px) {
+
+            .header .headerclick {
+                display: none;
+            }
+
+            .header .hamburger {
+                display: block;
+            }
+
+            .leftarm {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+
+            .fcontent {
+                background-color: white;
+                flex-direction: column;
+                margin: 40px auto;
+
+            }
+
+            .fcontent .content {
+                font-size: 16px;
+                line-height: 26px;
+                color: #333;
+                max-width: 90%;
+            }
+
+            .sheader {
+                display: none;
+            }
+
+            .scontent {
+                flex-wrap: wrap;
+                flex-direction: column;
+                max-width: 80%;
+                margin: auto;
+            }
+
+            .tajuk {
+                display: none
+            }
+
+            .leftarm .leftdown {
+                display: none;
+            }
+
+            .fcontent .whiteicon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 5px;
+            }
+
+            .fcontent .whiteicon {
+                width: 80%;
+                max-width: 400px;
+                height: auto;
+            }
+
+            .fcontent .media {
+                display: none;
+            }
+
+            .fcontent .content {
+                font-size: 20px;
+                max-width: 100%;
+
+            }
+
+            .scontent .rightdown {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin: 0;
+            }
+
+
+            .featurewrap {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+                margin-bottom: 10px;
+                width: auto;
+            }
+
+            .scontent .featured2 {
+                display: inline-block;
+                color: #B9FF66;
+                font-size: 20px;
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+
+            .featured {
+                display: inline-block;
+                width: 50px;
+                height: auto;
+            }
+
+            .rightarm {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .rightarm div {
+                width: 90%;
+                max-width: 380px;
+                padding: 20px;
+                text-align: center;
+                border-radius: 12px;
+            }
+
+            .mobiletitle {
+                max-width: 70%;
+                display: block;
+                font-size: 50px;
+                margin: 10px;
+                padding: 0px 30px;
+                font-weight: 700;
+                text-align: left;
+                font-family: "Space Grotesk", sans-serif;
+                margin-bottom: 10px;
+                color: #000;
+            }
+
+        }
+    </style>
+
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+
+<body>
+    <!-- header coding -->
+    <div class="header">
+        <!-- leftside -->
+        <div>
+            <img src="image/starlogo.png" alt="headerlogo" class="headerlogo">
+        </div>
+        <!-- rightside -->
+        <div class="headerclick">
+            <p>About us</p>
+            <p>Services</p>
+            <p class="specialwords">Use Cases</p>
+            <p>Pricing</p>
+            <p>Blog</p>
+            <a class="headerbutton" href="#" target="_blank">Request a quote</a>
+        </div>
+        <div class="hamburger">
+            <img src="image/menu.png" alt="hamburger">
+        </div>
+    </div>
+    <!-- First content -->
+    <div class="fcontent">
+        <div class="media">
+            <img src="image/pplicon.png" alt="peopleicon">
+        </div>
+
+        <h1 class="mobiletitle">Proven Success Stories</h1> <!-- ✅ 新增 -->
+
+        <div class="whiteicon">
+            <img src="image/white.png" alt="whitebackground">
+        </div>
+        <div class="text">
+            <h1 class="tajuk">Proven Success Stories</h1>
+            <p class="content">See how our innovative digital marketing strategies have transformed
+                businesses.Whether through SEO,PPC,social media,or web design,these use cases highlight
+                the tangible impact of our work.Explore the successes and envision what we can
+                achieve together.</p>
+        </div>
+    </div>
+    <!-- second content-->
+    <div>
+        <div class="scontent">
+            <div class="leftarm">
+                <h2 class="sheader">Featured Success Story</h2>
+
+                <div class="featurewrap">
+                    <img src="image/icon star.png" alt="icon" class="featured">
+                    <h2 class="featured2">Featured</h2>
+                </div>
+
+                <h4 class="sheader2">Scaling Success for a Leading E-Commerce Brand</h4>
+                <p class="content2">Through a comprehensive SEO and PPC strategy, we helped this e-commerce brand
+                    increase visibility, drive traffic, and boost sales.</p>
+                <div class="leftdown">
+                    <img src="image/buttongo.png" alt="buttongo" class="go">
+                    <p class="read">Read</p>
+                </div>
+            </div>
+            <div class="rightarm">
+                <div>
+                    <h2>200%</h2>
+                    <p>increase in organic traffic</p>
+                </div>
+                <div>
+                    <h2>150%</h2>
+                    <p>rise in online sales</p>
+                </div>
+                <div>
+                    <h2>75%</h2>
+                    <p>reduction in cost-per-click (CPC)</p>
+                </div>
+                <div>
+                    <h2>300%</h2>
+                    <p>improvement in conversion rate</p>
+                </div>
+            </div>
+            <div class="rightdown">
+                <img src="image/buttongo.png" alt="buttongo" class="go">
+                <p class="read">Read</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
