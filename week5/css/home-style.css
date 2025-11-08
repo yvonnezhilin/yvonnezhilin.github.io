@@ -157,14 +157,16 @@
      }
 
      .footer {
-
+         display: flex;
          flex-wrap: wrap;
-         justify-content: space-between;
-         align-items: center;
+         justify-content: center;
+         gap: 10px;
      }
 
      .footer img {
-         width: calc(100% / 4);
-         margin: 10px;
+         width: calc(33.33% - 10px);
+         /* 每行三张，减掉 gap 空间 */
+         height: auto;
+         display: block;
      }
  }
