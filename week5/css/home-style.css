@@ -159,11 +159,12 @@
      .footer {
 
          flex-wrap: wrap;
-         justify-content: center;
+         justify-content: space-between;
+         align-items: center;
      }
 
      .footer img {
-         width: 30%;
+         width: calc(100% / 4);
          margin: 10px;
      }
  }
