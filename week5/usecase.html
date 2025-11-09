@@ -202,7 +202,6 @@
             .fcontent .mobiletitle {
                 display: block;
                 font-size: 40px;
-                margin: 10px;
                 padding: 0px 30px;
                 font-weight: 700;
                 text-align: left;
@@ -211,14 +210,19 @@
                 color: #000;
             }
 
-            .fcontent .content {
-                font-size: 20px;
-                line-height: 26px;
-                color: #333;
-                text-align: left;
-                margin: auto;
-                width: 90%;
+            .fcontent div {
+                width: 100%;
+                padding: 20px;
+                display: block;
             }
+
+            .fcontent .content {
+                text-align: left;
+                width: 90%;
+                font-size: 18px;
+                line-height: 28px;
+            }
+
 
             /* 以下搞定 */
             .sheader {
@@ -254,25 +258,25 @@
                 display: none;
             }
 
-            /* 以上搞定 */
-            .featurewrap {
+            /* sini */
+
+            .leftarm .featurewrap {
                 display: flex;
-                gap: 10px;
-                margin-bottom: 10px;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 8px;
+                width: 100%;
+            }
+
+            .featurewrap .featured {
+                display: inline-block;
+                width: 55px;
+                margin: 0;
             }
 
             .featurewrap .featured2 {
+                margin: 0;
                 display: inline-block;
-                color: #B9FF66;
-                font-size: 25px;
-                font-weight: 700;
-                letter-spacing: 1px;
-            }
-
-            .featured {
-                display: inline-block;
-                width: 50px;
-                height: auto;
             }
 
             /* 下面的搞定 */
@@ -361,7 +365,7 @@
 
                 <div class="featurewrap">
                     <img src="image/icon star.png" alt="icon" class="featured">
-                    <h2 class="featured2">Featured</h2>
+                    <h2 class="featured2">FEATURED</h2>
                 </div>
 
                 <h4 class="sheader2">Scaling Success for a Leading E-Commerce Brand</h4>
