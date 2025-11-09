@@ -217,28 +217,45 @@
                 display: block;
             }
 
+            /* 以上是header */
             .leftarm {
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
                 gap: 8px;
-                width: 100%;
                 margin-bottom: 20px;
             }
 
+            /*  */
 
             .fcontent {
                 background-color: white;
                 flex-direction: column;
-                margin: 40px auto;
+                align-items: flex-start;
+                justify-content: center;
+                margin: auto;
+                width: 90%;
+                padding-left: 20px;
+            }
 
+            .fcontent .mobiletitle {
+                display: block;
+                font-size: 50px;
+                margin: 10px;
+                padding: 0px 30px;
+                font-weight: 700;
+                text-align: left;
+                font-family: "Space Grotesk", sans-serif;
+                margin-bottom: 10px;
+                color: #000;
             }
 
             .fcontent .content {
-                font-size: 16px;
+                font-size: 20px;
                 line-height: 26px;
                 color: #333;
-                max-width: 90%;
+                text-align: left;
+                margin: auto;
+                width: 90%;
             }
 
             .sheader {
@@ -278,11 +295,7 @@
                 display: none;
             }
 
-            .fcontent .content {
-                font-size: 20px;
-                max-width: 100%;
 
-            }
 
             .scontent .rightdown {
                 display: flex;
@@ -331,18 +344,7 @@
                 border-radius: 12px;
             }
 
-            .mobiletitle {
-                max-width: 70%;
-                display: block;
-                font-size: 50px;
-                margin: 10px;
-                padding: 0px 30px;
-                font-weight: 700;
-                text-align: left;
-                font-family: "Space Grotesk", sans-serif;
-                margin-bottom: 10px;
-                color: #000;
-            }
+
 
         }
     </style>
