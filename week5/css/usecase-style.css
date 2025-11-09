@@ -1,0 +1,300 @@
+  /* Firstcontent styling */
+  .fcontent {
+      display: flex;
+      align-items: center;
+      background-color: #F3F3F3;
+      border-radius: 20px;
+      margin: auto;
+      margin-bottom: 35px;
+      max-width: 90%;
+  }
+
+  .fcontent div {
+      display: flex;
+      flex-direction: column;
+      padding: 30px 40px;
+      width: calc(100%/2);
+  }
+
+  /* photo */
+  .media {
+      width: 50%;
+  }
+
+  .fcontent .whiteicon {
+      width: 100%;
+      display: none;
+  }
+
+  /* text div */
+  .text {
+      justify-content: space-between;
+  }
+
+  /* first header */
+  .tajuk {
+      font-size: 35px;
+      font-family: "Space Grotesk", sans-serif;
+      margin-bottom: 15px;
+      font-weight: 500;
+  }
+
+  /* paragraph */
+  .content {
+      font-size: 12px;
+      font-family: "Space Grotesk", sans-serif;
+      line-height: 22px;
+      font-weight: 480;
+  }
+
+  /* second content */
+  .scontent {
+      display: flex;
+      align-items: center;
+      background-color: #191A23;
+      border-radius: 20px;
+      margin: 10px;
+      max-width: 90%;
+      margin: auto;
+  }
+
+  .scontent div {
+      display: flex;
+      padding: 15px 20px;
+      width: calc(100%/2);
+      font-family: "Space Grotesk", sans-serif;
+  }
+
+  .scontent .featured2 {
+      display: none;
+      color: #B9FF66;
+  }
+
+  /* header */
+  .sheader {
+      background-color: #B9FF66;
+      border-radius: 10px;
+      padding: 5px 3px;
+      font-size: 25px;
+      font-weight: 500;
+      width: 63%
+  }
+
+  /* second header */
+  .sheader2 {
+      color: #FFFF;
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+  }
+
+  /* content */
+  .content2 {
+      color: white;
+      font-size: 13px;
+      margin-bottom: 40px;
+  }
+
+  /* button */
+  .go {
+      width: 40px;
+  }
+
+  .read {
+      color: #B9FF66;
+      font-size: 13px;
+  }
+
+  /* left*/
+  .leftarm {
+      display: flex;
+      flex-direction: column;
+      margin-left: 15px;
+  }
+
+  .featured {
+      display: none;
+      width: 60%;
+  }
+
+  /* rightside */
+  .rightarm {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      width: 50%;
+
+  }
+
+  .rightarm div {
+      padding: 25px 5px;
+      align-items: center;
+      text-align: center;
+      background-color: white;
+      border-radius: 10px;
+      width: calc(40% - 20px);
+      display: flex;
+      flex-direction: column;
+  }
+
+  .rightarm h2 {
+      font-size: 25px;
+      margin: 5px;
+
+  }
+
+  .rightarm p {
+      font-size: 13px;
+      margin: 5px;
+  }
+
+  .scontent .rightdown {
+      display: none;
+  }
+
+  .leftarm .leftdown {
+      padding: 0px;
+  }
+
+  .mobiletitle {
+      display: none;
+  }
+
+  @media screen and (max-width:790px) {
+
+      .header .headerclick {
+          display: none;
+      }
+
+      .header .hamburger {
+          display: block;
+      }
+
+      /* 以上是header */
+      .leftarm {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          margin-bottom: 20px;
+      }
+
+      /*  */
+
+      .fcontent {
+          background-color: white;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          margin: auto;
+          width: 90%;
+          padding-left: 20px;
+      }
+
+      .fcontent .mobiletitle {
+          display: block;
+          font-size: 40px;
+          padding: 0px 30px;
+          font-weight: 700;
+          text-align: left;
+          font-family: "Space Grotesk", sans-serif;
+          margin-bottom: 10px;
+          color: #000;
+      }
+
+      .fcontent div {
+          width: 100%;
+          padding: 20px;
+          display: block;
+      }
+
+      .fcontent .content {
+          text-align: left;
+          width: 90%;
+          font-size: 18px;
+          line-height: 28px;
+      }
+
+
+      /* 以下搞定 */
+      .sheader {
+          display: none;
+      }
+
+      .scontent {
+          flex-wrap: wrap;
+          flex-direction: column;
+          max-width: 80%;
+          margin: auto;
+      }
+
+      .tajuk {
+          display: none
+      }
+
+      .fcontent .whiteicon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 5px;
+      }
+
+      .fcontent .whiteicon {
+          width: 80%;
+          max-width: 400px;
+          height: auto;
+      }
+
+      .fcontent .media {
+          display: none;
+      }
+
+      /* sini */
+
+      .leftarm .featurewrap {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 8px;
+          width: 100%;
+      }
+
+      .featurewrap .featured {
+          display: inline-block;
+          width: 55px;
+          margin: 0;
+      }
+
+      .featurewrap .featured2 {
+          margin: 0;
+          display: inline-block;
+      }
+
+      /* 下面的搞定 */
+      .leftarm .leftdown {
+          display: none;
+      }
+
+      .rightarm {
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+      }
+
+      .rightarm div {
+          width: 90%;
+          max-width: 380px;
+          padding: 20px;
+          text-align: center;
+          border-radius: 12px;
+      }
+
+      .scontent .rightdown {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin: 0;
+      }
+
+  }
