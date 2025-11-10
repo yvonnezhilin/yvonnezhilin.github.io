@@ -209,7 +209,7 @@
 
       .fcontent .content {
           text-align: left;
-          width: 90%;
+          width: 80%;
           font-size: 18px;
           line-height: 28px;
       }
@@ -251,12 +251,14 @@
 
       /* sini */
 
+
       .leftarm .featurewrap {
           display: flex;
           align-items: center;
           justify-content: flex-start;
           gap: 8px;
           width: 100%;
+          padding: 20px;
       }
 
       .featurewrap .featured {
