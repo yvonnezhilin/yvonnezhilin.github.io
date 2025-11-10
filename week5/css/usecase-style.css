@@ -41,7 +41,7 @@
 
   /* paragraph */
   .content {
-      font-size: 12px;
+      font-size: 13px;
       font-family: "Space Grotesk", sans-serif;
       line-height: 22px;
       font-weight: 480;
@@ -75,7 +75,7 @@
       background-color: #B9FF66;
       border-radius: 10px;
       padding: 5px 3px;
-      font-size: 25px;
+      font-size: 21px;
       font-weight: 500;
       width: 63%
   }
