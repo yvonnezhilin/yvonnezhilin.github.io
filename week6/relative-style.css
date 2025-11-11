@@ -1,3 +1,12 @@
+.body {
+    max-width: 1400px
+}
+
+.heading {
+    text-align: center;
+}
+
+
 .content {
     display: flex;
     justify-content: space-between;
@@ -5,11 +14,17 @@
     margin: auto;
 }
 
-.content h3 {
+.scontent h3 {
     font-size: 20px;
 
 }
 
-.content h4 {
+.scontent h4 {
     color: rgb(103, 224, 103);
+}
+
+.scontent {
+    background-color: grey;
+    border-radius: 10px;
+    display: flex;
 }
