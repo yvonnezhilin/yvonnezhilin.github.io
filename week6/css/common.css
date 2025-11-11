@@ -36,30 +36,4 @@
 
  .header .hamburger {
      display: none;
-     background-color: #f8f8f8;
-     padding: 10px;
-     border-radius: 8px;
- }
-
- .hamburger-menu {
-     display: none;
-     position: absolute;
-     width: 160px;
-     z-index: 1;
- }
-
-
- .hamburger:hover .hamburger-menu {
-     display: block;
- }
-
- @media screen and (max-width: 780px) {
-
-     .header .headerclick {
-         display: none;
-     }
-
-     .header .hamburger {
-         display: block;
-     }
  }
