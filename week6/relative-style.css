@@ -16,7 +16,7 @@
 
 .scontent h3 {
     font-size: 20px;
-
+    color: grey;
 }
 
 .scontent h4 {
@@ -24,7 +24,7 @@
 }
 
 .scontent {
-    background-color: grey;
+    background-color: rgb(196, 191, 191);
     border-radius: 10px;
     display: flex;
 }
