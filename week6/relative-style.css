@@ -6,6 +6,9 @@
     text-align: center;
 }
 
+.heading p {
+    color: grey;
+}
 
 .content {
     display: flex;
@@ -20,11 +23,11 @@
 }
 
 .scontent h4 {
-    color: rgb(103, 224, 103);
+    color: rgb(64, 138, 64);
 }
 
 .scontent {
-    background-color: rgb(196, 191, 191);
+    background-color: rgb(229, 226, 226);
     border-radius: 10px;
     display: flex;
 }
