@@ -1,6 +1,7 @@
   /* 限制那个page的width 不会宽到哪里去 */
   body {
       max-width: 1200px;
+      margin: auto;
   }
 
   /* 标题 */
@@ -106,6 +107,7 @@
       .card {
           width: 90%;
           max-width: 400px;
+          margin-bottom: 100px;
           /* 限制宽度 不然会被拉大 */
       }
 
