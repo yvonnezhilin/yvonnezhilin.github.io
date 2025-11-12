@@ -37,3 +37,31 @@
  .header .hamburger {
      display: none;
  }
+
+ .burger {
+     display: none;
+     position: absolute;
+     width: 160px;
+     z-index: 1;
+ }
+
+ .burger p {
+     display: block;
+     padding: 5px;
+ }
+
+
+ .burger .usecase-btn {
+     display: block;
+     padding: 5px;
+     background-color: white;
+     border: 0;
+ }
+
+ .burger .usecase-btn:hover {
+     background-color: chartreuse;
+ }
+
+ .hamburger:hover .burger {
+     display: block;
+ }
