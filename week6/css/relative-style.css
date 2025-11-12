@@ -40,6 +40,15 @@
       margin: auto;
       /* 找中间lo */
       padding: 0 20px;
+      flex-wrap: wrap;
+      /* 让他掉下来 */
+      justify-content: center;
+      /* 在中间 */
+      gap: 40px;
+      /* 控制位置 */
+      max-width: 1200px;
+      /* 不要太宽 */
+
   }
 
   .card {
