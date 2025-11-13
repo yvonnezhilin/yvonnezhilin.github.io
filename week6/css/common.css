@@ -38,30 +38,35 @@
      display: none;
  }
 
- .burger {
+ .menu .submenu {
      display: none;
      position: absolute;
-     width: 160px;
-     z-index: 1;
+     top: 70px;
+     flex-direction: column;
+     width: 50px;
+     background-color: rgb(181, 255, 70);
+     border-radius: 10px;
  }
 
- .burger p {
+ .header .menu {
+     padding: 0;
+     margin: 0 10px;
+     position: relative;
+     display: inline-block;
+ }
+
+
+ .menu:hover .submenu {
      display: block;
-     padding: 5px;
  }
 
 
- .burger .usecase-btn {
-     display: block;
-     padding: 5px;
-     background-color: white;
-     border: 0;
- }
+ @media screen and (max-width:780px) {
+     .header .headerclick {
+         display: none;
+     }
 
- .burger .usecase-btn:hover {
-     background-color: chartreuse;
- }
-
- .hamburger:hover .burger {
-     display: block;
+     .header .hamburger {
+         display: block;
+     }
  }

@@ -101,13 +101,6 @@
 
  @media screen and (max-width: 780px) {
 
-     .header .headerclick {
-         display: none;
-     }
-
-     .header .hamburger {
-         display: block;
-     }
 
 
      /* 以上搞定 */
