@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registerform</title>
+    <link rel="stylesheet" href="css/form-style.css">
+
+</head>
+
+<body>
+    <h2>Registration Form</h2>
+    <form>
+        <div>
+            <input type="text" placeholder="First Name" id="fname" name="fname" required>
+            <input type="text" placeholder="Last Name" id="lname" name="lname" required>
+        </div>
+
+        <div>
+            <label for="dobirth">Date Of Birth:</label>
+            <input type="date" id="dobirth" name="dobirth">
+
+            <input type="email" placeholder="Email Address" id="email" name="email">
+        </div>
+
+        <div>
+            <label for="url">Enter A Website:</label>
+            <input type="url" name="url">
+            <p>Select your favorite Colors:</p>
+            <input type="radio" id="black" name="fav_color" value="black">
+            <label for="black">Black</label><br>
+            <input type="radio" id="pink" name="fav_color" value="pink">
+            <label for="pink">Pink</label><br>
+            <input type="radio" id="yellow" name="fav_color" value="yellow">
+            <label for="yellow">Yellow</label>
+        </div>
+
+        <div>
+            <p><label for="bio">Bio:</label></p>
+            <textarea id="bio" name="bio" rows="5" cols="40"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>
