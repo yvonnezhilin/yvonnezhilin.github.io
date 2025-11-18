@@ -1,4 +1,40 @@
+.container {
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
 div {
     margin: 20px;
+}
 
+
+#fname {
+    margin-right: 20px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#lname {
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#email {
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#url {
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#dobirth {
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#bio {
+    border-radius: 15px;
+    padding: 10px;
 }
