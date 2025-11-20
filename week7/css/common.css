@@ -4,69 +4,81 @@
      font-family: 'Space Grotesk', sans-serif;
  }
 
- /* header styling */
- .header {
+
+ header {
+     color: black;
+     margin: 20px;
      display: flex;
      justify-content: space-between;
+
  }
 
- .header div {
-     display: flex;
-     gap: 30px;
-     font-family: "Space Grotesk", sans-serif;
-     align-items: center;
-     font-size: 15px;
-     font-weight: 450;
-     padding: 15px 35px;
- }
-
- /* header logo styling width */
- .headerlogo {
-     width: 200px;
- }
-
- /* headerbutton */
  .headerbutton {
      text-decoration: none;
      border: 1.5px black solid;
      border-radius: 10px;
-     padding: 15px 20px;
+     padding: 10px 15px;
      color: #000;
  }
 
- .header .hamburger {
+ .menu-toggle {
+     font-size: 30px;
+     cursor: pointer;
      display: none;
+     z-index: 1001;
  }
 
- .menu .submenu {
-     display: none;
-     position: absolute;
-     top: 35px;
-     flex-direction: column;
-     width: 45px;
-     background-color: rgb(181, 255, 70);
-     border-radius: 10px;
+ .menu {
+     display: flex;
+     gap: 15px;
+     align-items: center;
  }
 
- .header .menu {
-     padding: 0;
-     margin: 0 10px;
-     position: relative;
-     display: inline-block;
+ .menu-item a {
+     color: black;
+     text-decoration: none;
+     padding: 10px;
+
  }
 
-
- .menu:hover .submenu {
-     display: block;
+ .menu-item a:hover {
+     background-color: #B9FF66;
+     border-radius: 5px;
  }
 
-
- @media screen and (max-width:780px) {
-     .header .headerclick {
-         display: none;
+ /* Mobile styles */
+ @media (max-width: 768px) {
+     .menu-toggle {
+         display: block;
      }
 
-     .header .hamburger {
-         display: block;
+     .menu {
+         display: none;
+         flex-direction: column;
+         background-color: #B9FF66;
+         position: fixed;
+         top: 0;
+         left: 0;
+         height: 100vh;
+         width: 100%;
+         padding-top: 5rem;
+         text-align: center;
+         z-index: 1000;
+     }
+
+     .menu.active {
+         display: flex;
+     }
+
+     .menu-item {
+         margin: 1.5rem 0;
+     }
+
+     .menu-item a {
+         font-size: 1.5rem;
+     }
+
+     .headerbutton {
+         display: none;
      }
  }
